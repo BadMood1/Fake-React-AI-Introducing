@@ -81,7 +81,7 @@ export default function Pricing() {
                         <div
                             key={key}
                             className={`relative bg-slate-900/50  border rounded-xl sm:rounded-2xl p-6 sm:p-8 transition-all duration-300
-                                overflow-visible group flex flex-col h-full
+                                overflow-visible group flex flex-col h-full group 
                                 ${
                                     plan.mostPopular
                                         ? "border-blue-500 shadow-2xl shadow-blue-500/20 lg:scale-105"
@@ -89,6 +89,10 @@ export default function Pricing() {
                                 }
                             `}
                         >
+                            <div
+                                className="absolute inset-0 bg-linear-to-br from-white/10 via-transparent to-transparent
+                            opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"
+                            />
                             {plan.mostPopular && (
                                 <div className="absolute -top-2 sm:-top-3 left-1/2 transform -translate-x-1/2 z-10">
                                     <div
