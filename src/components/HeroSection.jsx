@@ -96,7 +96,7 @@ export default function HeroSection() {
                         >
                             <button
                                 className="group w-full sm:w-auto px-6 lg:px-8 py-3 lg:py-4
-                            bg-gradient-to-b from-blue-600 to-blue-400 rounded-lg font-semibold
+                            bg-linear-to-b from-blue-600 to-blue-400 rounded-lg font-semibold
                             text-sm sm:text-base transition-transform duration-300 hover:scale-102 flex
                             items-center justify-center gap-x-1"
                             >

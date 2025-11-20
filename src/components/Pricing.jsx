@@ -60,7 +60,7 @@ const plans = [
 export default function Pricing() {
     return (
         <section id="pricing" className="py-16 sm:py-20 px-10 sm:px-6 lg:px-8 relative">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12 sm:mb-16 lg:mb-20">
                     <h2 className="text-5xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
                         <span className="bg-linear-to-b from-white to-gray-400 bg-clip-text text-transparent">
@@ -91,7 +91,7 @@ export default function Pricing() {
                         >
                             <div
                                 className="absolute inset-0 bg-linear-to-br from-white/10 via-transparent to-transparent
-                            opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"
+                            opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg pointer-events-none"
                             />
                             {plan.mostPopular && (
                                 <div className="absolute -top-2 sm:-top-3 left-1/2 transform -translate-x-1/2 z-10">
