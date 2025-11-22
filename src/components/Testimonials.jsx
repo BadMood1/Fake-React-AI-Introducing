@@ -37,13 +37,14 @@ export default function Testimonials() {
                             What developers are saying about us
                         </h2>
                         <p className="text-gray-400 text-xl sm:text-lg max-w-2xl mx-auto">
-                            Choose the perfect plan for your needs. All plans include a 14-day free trial.
+                            Everything you need to build, test, and deploy applications with AI-powered
+                            development tools.
                         </p>
                     </div>
 
                     {/* Right side - Testimonials */}
 
-                    <div className="lg:w-1/2 w-full space-y-3 sm:space-y-4 lg:space-y-5">
+                    <div className="lg:w-1/2 w-full space-y-4 sm:space-y-6 lg:space-y-8">
                         {testimonials.map((testimonial, key) => (
                             <div
                                 key={key}
@@ -51,10 +52,10 @@ export default function Testimonials() {
                             border border-slate-800 rounded-xl sm:rounded-2xl"
                             >
                                 <div className="flex items-start gap-x-3 sm:gap-x-4">
-                                    <div className="flex-shrink-0">
+                                    <div className="shrink-0">
                                         <div
                                             className="text-2xl sm:text-3xl lg:text-4xl font-bold
-                                        bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"
+                                        bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"
                                         >
                                             "
                                         </div>
