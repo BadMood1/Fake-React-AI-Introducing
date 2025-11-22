@@ -33,10 +33,10 @@ export default function Testimonials() {
                 <div className="flex flex-col lg:flex-row items-start gap-8 sm:gap-12 lg:gap-16">
                     {/* Left side - Header */}
                     <div className="lg:w-1/2 w-full text-center lg:text-left">
-                        <h2 className="text-5xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
+                        <h2 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
                             What developers are saying about us
                         </h2>
-                        <p className="text-gray-400 text-xl sm:text-lg max-w-2xl mx-auto">
+                        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                             Everything you need to build, test, and deploy applications with AI-powered
                             development tools.
                         </p>

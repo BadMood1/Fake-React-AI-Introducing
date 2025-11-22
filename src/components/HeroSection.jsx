@@ -57,7 +57,7 @@ export default function HeroSection() {
                         </div>
 
                         <h1
-                            className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold 
+                            className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-semibold 
                         mb-4 sm:mb=6 slide-in-from-bottom animate-in duration-700 anim-delay-200"
                         >
                             <span
@@ -124,7 +124,7 @@ export default function HeroSection() {
                          hover:border-blue-600/50 hover:border duration-300"
                         >
                             <div
-                                className="bg-linear-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:h-[350px]
+                                className="bg-gray-900/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:h-[350px]
                     lg:h-[450px] border border-white/5"
                             >
                                 {/* IDE HEADER */}

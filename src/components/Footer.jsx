@@ -22,11 +22,6 @@ const footerLinks = {
 };
 
 export default function Footer() {
-    console.log(
-        Object.entries(footerLinks).map(([category, links]) => {
-            console.log(category, "LINKS:", links);
-        })
-    );
     return (
         <footer>
             <div className="border-slate-800 border-t">
@@ -46,7 +41,10 @@ export default function Footer() {
                             Revolutionize your workflow with intelligent automation and AI-driven tools.
                             Engineered for forward-thinking teams.
                         </p>
-                        <div className="flex gap-x-2 sm:gap-x-3">
+                        <div
+                            className="flex gap-x-2 sm:gap-x-3 [&_a]:hover:scale-110 [&_a]:duration-200
+                        [&_a]:hover:text-blue-300"
+                        >
                             <a href="#" className="p-2 bg-slate-800 rounded-lg">
                                 <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
                             </a>
@@ -62,12 +60,16 @@ export default function Footer() {
                         </div>
                     </div>
                     {/* Right side */}
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 flex-2">
-                        {Object.entries(footerLinks).map(([category, links]) => (
-                            <div className="flex flex-col gap-3">
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 md:gap-10 lg:gap-15 xl:gap-20 flex-2">
+                        {Object.entries(footerLinks).map(([category, links], index) => (
+                            <div key={index} className="flex flex-col gap-3">
                                 <h1 className="font-bold mb-2">{category}</h1>
-                                {links.map((link) => (
-                                    <a href="#" className="text-gray-400">
+                                {links.map((link, index) => (
+                                    <a
+                                        href="#"
+                                        key={index}
+                                        className="text-gray-400 hover:text-blue-300 duration-150"
+                                    >
                                         {link}
                                     </a>
                                 ))}
@@ -79,10 +81,10 @@ export default function Footer() {
             <div className="w-full border-t border-slate-800">
                 <div
                     className="flex flex-col gap-y-3 items-center md:flex-row justify-between max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 
-                mb-5 text-gray-400 max-sm:text-xs"
+                mb-5 text-gray-400 max-sm:text-xs sm:text-sm"
                 >
                     <p>© 2025 BadMood AI. All rights reserved.</p>
-                    <div className="flex gap-x-4 md:gap-x-4 lg:gap-x-6 xl:gap-x-8">
+                    <div className="flex gap-x-4 sm:gap-x-10 md:gap-x-6 lg:gap-x-8 xl:gap-x-12">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms of Service</a>
                         <a href="#">Cookie Settings</a>

@@ -62,7 +62,7 @@ export default function Pricing() {
         <section id="pricing" className="py-16 sm:py-20 px-10 sm:px-6 lg:px-8 relative">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12 sm:mb-16 lg:mb-20">
-                    <h2 className="text-5xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
+                    <h2 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
                         <span className="bg-linear-to-b from-white to-gray-400 bg-clip-text text-transparent">
                             Simple, Transparent
                         </span>
@@ -71,7 +71,7 @@ export default function Pricing() {
                             Pricing Plans
                         </span>
                     </h2>
-                    <p className="text-gray-400 text-xl sm:text-lg max-w-2xl mx-auto">
+                    <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                         Choose the perfect plan for your needs. All plans include a 14-day free trial.
                     </p>
                 </div>
