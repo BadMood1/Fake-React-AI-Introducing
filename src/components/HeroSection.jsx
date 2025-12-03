@@ -5,23 +5,7 @@ import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { codeExamples, floatingCards } from "../data/CodeExamples";
 
 export default function HeroSection() {
-    const [mousePosition, setMousePosition] = useState({
-        x: 0,
-        y: 0,
-    });
     const [activeTab, setActiveTab] = useState("App.jsx");
-
-    useEffect(() => {
-        function handleMouseMove(e) {
-            setMousePosition({ x: e.clientX, y: e.clientY });
-        }
-
-        window.addEventListener("mousemove", handleMouseMove);
-
-        return () => {
-            window.removeEventListener("mousemove", handleMouseMove);
-        };
-    }, []);
 
     const currentFloatingCard = floatingCards[activeTab];
 
@@ -30,13 +14,6 @@ export default function HeroSection() {
             className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 
         px-4 sm:px-6 lg:px-6 overflow-hidden mt-4 "
         >
-            <div
-                className="absolute inset-0 opacity-30"
-                style={{
-                    background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.15), transparent 40%)`,
-                }}
-            ></div>
-
             <div className="absolute top-30 left-4 sm:left-10 md:left-20 lg:left-30 w-48 sm:w-72 h-48 sm:h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
             <div className="absolute bottom-30 right-4 sm:right-10 md:right-20 lg:right-35 xl:right-50 w-48 sm:w-72 h-48 sm:h-72 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
 

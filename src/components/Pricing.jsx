@@ -138,7 +138,7 @@ export default function Pricing() {
                             </ul>
 
                             <button
-                                className={`w-full py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg font-semibold cursor-pointer transition-colors duration=300 ${
+                                className={`w-full mt-auto py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg font-semibold cursor-pointer transition-colors duration=300 ${
                                     plan.mostPopular
                                         ? "bg-linear-to-b  from-blue-500 to-cyan-500"
                                         : "bg-white/5 border-white/10 hover:bg-white/10"

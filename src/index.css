@@ -69,5 +69,11 @@
 }
 
 html {
+    @apply bg-slate-950;
     scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: rgba(128, 0, 128, 0.5);
+    color: white;
 }
